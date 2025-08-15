@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+</head>
+<body>
+    <h1>Formulario de cadastro</h1>
+
+    <form action="processar.php" method="post">
+    <!-- Campo de texto simples-->
+        <label for="nome">Nome completo</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+
+        <!-- Campo de texto simples-->
+        <label for="e-mail">E-mail:</label><br>
+        <input type="e-mail" id="email" name="e-mail" placeholder="Digite seu e-mail" required><br><br>
+
+        <!-- Campo de texto simples-->
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha"><br><br>
+
+<!-- Botão de opção (radio)-->
+<label>Sexo:</label><br>
+<input type="radio" id="masculino" name="sexo" value="M">
+<label for="maculino">Masculino</label><br>
+<input type="radio" id="feminino" name="sexo" value="F">
+<label for="feminino">Feminino</label><br>
+
+<!-- Caixas de seleção multipla (checkbox)-->
+<label>Interesses:</label><br>
+<input type="checkbox" id="programacao" name="interesses" value="programacao">
+<label for="programacao">Programação</label><br>
+
+<input type="checkbox" id="design" name="Interesses" value="design">
+        <label for="design">Design</label>
+
+        <input type="checkbox" id="esportes" name="Interesses" value="esportes">
+        <label for="esportes">Esportes</label><br><br>
+
+<!-- Lista de seleção (selected)-->
+
+<label for="cidade">Cidade:</label>
+<select name="cidade" id="cidade">
+<option value=""> Selecione uma cidade</option>
+<option value="sp">São Paulo</option>
+<option value="rj">Rio de Janeiro</option>
+<option value="mg">Belo Horizonte</option>
+</select> <br><br>
+
+
+<!-- Area de texto-->
+<label for="comentarios">Comentarios</label><br>
+<textarea name="comentarios" rows="4" cols="50"></textarea><br>
+
+
+
+    </form>
+</body>
+</html>
