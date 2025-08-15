@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+     <meta charset="UTF-8">
+     <title>GameZone Retro 🎮</title>
+     <style>
+          body {
+               margin: 0;
+               background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c83c004e-1370-4756-88e5-4071de797088/dh28uuh-2afd5ded-7cd7-4b17-a3ef-d3fa0ab6c364.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M4M2MwMDRlLTEzNzAtNDc1Ni04OGU1LTQwNzFkZTc5NzA4OFwvZGgyOHV1aC0yYWZkNWRlZC03Y2Q3LTRiMTctYTNlZi1kM2ZhMGFiNmMzNjQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.aewYgvGauGzDVELK8foJ_CjHL4b9rYNHSil9zFvc5pQ') no-repeat center center;
+               background-size: cover;
+               color: white; /* texto mais visível */
+               position: relative;
+          }
+
+          /* Camada escura sobre o GIF para destacar o texto */
+          body::before {
+               content: "";
+               position: fixed;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               background-color: rgba(0, 0, 0, 0.5); /* escurece o fundo */
+               z-index: 0;
+          }
+
+          /* Coloca o conteúdo acima da camada escura */
+          body * {
+               position: relative;
+               z-index: 1;
+          }
+
+          a {
+               color: #ffcc00; /* links mais visíveis */
+              
+               /* Abaixo a parte essencial do projeto*/
+          }
+     </style>
+</head>
+<body>
+     <h1>GameZone Retro 🎮</h1>
+     <p>Bem-vindo à <b>GameZone Retro</b>, onde a <i>diversão clássica</i> nunca acaba!</p>
+
+     <a href="https://gamezone.ge/consoles/retro-consoles/?sl=en">Ver Produtos</a> | 
+     <a href="https://patiodigitalacademy.com.br/blog/consoles/" target="_blank">História dos Consoles</a>
+
+     <h2>Consoles Clássicos</h2>
+     <ul>
+          <li>🎮 Nintendo NES</li>
+          <li>🕹️ Sega Mega Drive</li>
+          <li>📀 PlayStation 1</li>
+     </ul>
+
+     <h2 id="produtos">Tabela de Preços</h2>
+     <table border="1" cellpadding="5">
+          <tr><th>Produto</th><th>Preço</th></tr>
+          <tr><td>Nintendo NES</td><td>R$ 499</td></tr>
+          <tr><td>Sega Mega Drive</td><td>R$ 399</td></tr>
+          <tr><td>PlayStation 1</td><td>R$ 599</td></tr>
+     </table>
+
+     <p>© 2025 GameZone Retro - Todos os direitos reservados.</p>
+</body>
+</html>
+
+
