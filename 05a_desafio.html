@@ -1,48 +1,70 @@
 <!-- Desafio 1 digitação (Aqui) -->
- 
+
 <!-- Obs: Ler (05a_desafio.md) para orientações -->
 <!-- Imagem de como deve ficar pronto na pasta assets (desafio 1.jpg) -->
-
 <!-- 🎮 🕹️ 💰 emojis para usar no projeto -->
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>GameZone Retro 🎮</title>
-<style>
-  body { font-family: Arial; text-align: center; background: #f8f8f8; }
-  h1 { color: #b22222; }
-  table { margin: auto; border-collapse: collapse; }
-  th, td { border: 1px solid #555; padding: 8px; }
-  th { background: #ddd; }
-  ul { list-style: none; padding: 0; }
-</style>
+     <meta charset="UTF-8">
+     <title>GameZone Retro 🎮 </title>
+     <style>
+          body {
+               margin: 0;
+               background: url('https://giffiles.alphacoders.com/163/163320.gif') no-repeat center center;
+               background-size: cover;
+               color: white; /* texto mais visível */
+               position: relative;
+          }
+
+          /* Camada escura sobre o GIF para destacar o texto */
+          body::before {
+               content: "";
+               position: fixed;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               background-color: rgba(0, 0, 0, 0.5); /* escurece o fundo */
+               z-index: 0;
+          }
+
+          /* Coloca o conteúdo acima da camada escura */
+          body * {
+               position: relative;
+               z-index: 1;
+          }
+
+          a {
+               color: #ff008c; /* links mais visíveis */
+              
+               /* Abaixo a parte essencial do projeto*/
+          }
+     </style>
 </head>
 <body>
-<h1>GameZone Retro🎮</h1>
-<p><b>Onde</b> a diversão <i>nunca acaba</i></p>
+     <h1>GameZone Retro 🎮🕹️</h1>
+     <p>Bem-vindo à <b>GameZone Retro</b>, onde você <i>revive a nostalgia,</i> jogue como nos velhos tempos!🎀</p>
 
-<a href="#tabela">Ver preços</a> | 
-<a href="https://pt.wikipedia.org/wiki/Videogame" target="_blank">História dos Games</a>
+     <a href="https://gamezone.ge/consoles/retro-consoles/?sl=en">Ver Produtos</a> | 
+     <a href="https://patiodigitalacademy.com.br/blog/consoles/" target="_blank">História dos Consoles</a>
 
-<h2> Videogames que ainda estão Disponíveis</h2>
-<ul>
-  <li>Nintendo</li>
-  <li>Sega Mega Drive</li>
-  <li>PlayStation 2</li>
-</ul>
+     <h2>Videogames Disponíveis</h2>
+     <ul>
+          <li>🎮 Nintendo </li>
+          <li>🕹️ Sega Mega Drive</li>
+          <li>💻 PlayStation 2</li>
+     </ul>
 
-<img src="assets/retro.jpg" width="300">
+     <h2 id="produtos">📦💵Tabela de Preços</h2>
+     <table border="1" cellpadding="5">
+          <tr><th>Produto</th><th>Preço</th></tr>
+          <tr><td>Nintendo</td><td>R$ 840</td></tr>
+          <tr><td>Sega Mega Drive</td><td>R$ 450</td></tr>
+          <tr><td>PlayStation 2</td><td>R$ 650</td></tr>
+     </table>
 
-<h2 id="tabela">📦💵 Preços e produtos</h2>
-<table>
-  <tr><th>Produto</th><th>Preço</th></tr>
-  <tr><td>NES</td><td>R$ 890</td></tr>
-  <tr><td>Controle Sega</td><td>R$ 100</td></tr>
-  <tr><td>Mario Bros</td><td>R$ 220</td></tr>
-</table>
-
-<p>💌📞contato@gamezone.com</p>
+     <p>© 2025 GameZone Retro - Todos os direitos reservados.</p>
+     <p>💌📞 contato@gamezone.com</p>
 </body>
 </html>
