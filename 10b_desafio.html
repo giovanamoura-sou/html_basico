@@ -1,0 +1,76 @@
+<!-- Desafio 3 digitação (Aqui)  -->
+ 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📸 Luna Captures</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>📸 <strong>Luna Captures</strong></h1>
+        <nav>
+            <a href="#sobre">Sobre</a> | 
+            <a href="#galeria">Galeria</a> | 
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <h2>Sobre Luna</h2>
+        <p>Fotógrafa há <strong>8 anos</strong> especializada em <em>momentos únicos</em>.</p>
+        <blockquote>"A fotografia captura não apenas o que vemos, mas o que sentimos."</blockquote>
+    </section>
+
+    <!-- Seção Galeria -->
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <img src="assets/Casamento 1.jpeg" alt="Casamento 1" width="200">
+        <img src="assets/Casamento 2.jpg" alt="Casamento 2" width="200">
+        <img src="assets/Casamento 3.jpeg" alt="Casamento 3" width="200">
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <ul>
+            <li><strong>Casamentos</strong> - R$ 3.200</li>
+            <li><strong>Retratos</strong> - R$ 650</li>
+            <li><strong>Eventos</strong> - R$ 945</li>
+        </ul>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="evento">Evento:</label>
+            <select id="evento" name="evento">
+                <option>Casamento</option>
+                <option>Retrato</option>
+                <option>Evento</option>
+            </select><br><br>
+
+            <label for="detalhes">Detalhes:</label><br>
+            <textarea id="detalhes" name="detalhes" rows="4" cols="30"></textarea><br><br>
+
+            <button type="submit">Solicitar Orçamento</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 Luna Captures | <a href="mailto:luna@exemplo.com">luna@exemplo.com</a></p>
+    </footer>
+</body>
+</html>
+
